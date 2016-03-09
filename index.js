@@ -13,7 +13,10 @@ module.exports = function(source, map) {
     this.cacheable()
   }
 
-  var ast = acorn.parse(source);
+  // @todo - pull options from loader config
+  var ast = acorn.parse(source, {
+    sourceType: 'module',
+  });
   var names = ast.body
       .filter(function(node) { return node.type === 'FunctionDeclaration'; })
       .map(function(node) { return node.id.name; });
