@@ -8,8 +8,8 @@
     "url": "https://github.com/jlongster/monkey-hot-loader.git"
   },
   "dependencies": {
-    "acorn": "^3.0.4",
-    "loader-utils": "^0.2.12",
+    "acorn": "^4.0.3",
+    "loader-utils": "^0.2.16",
     "source-map": "^0.5.3"
   }
 }
